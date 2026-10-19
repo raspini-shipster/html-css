@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens-flexiveis</title>
+</head>
+<body>
+    <h1>como tornar uma imagem dinamica</h1>
+<p>tente abrir o site em varios dispositivos diferentes oiu apenas aumente ou diminua seu navegador</p>
+<picture>
+    <source media="(max-width: 750px)" srcset="imagens/hacker3.jpg" type="image/jpg">
+    <source media="(max-width: 1050px )" srcset="imagens/hacker2.jpg" type="image/jpg">
+    <img src="imagens/hacker1.jpg" alt="foto grande">
+</picture>
+<h1>reproduzindo audio</h1>
+<p>vamos produzir audio</p>
+<audio src="midia/happy.mp3" controls autoplay></audio>
+<p>audio add de outra forma</p>
+<audio preload="metadata" autoplay controls>
+    <source src="midia/happy.mp3" type="audio/mpeg">
+</audio>
+
+    
+</body>
+</html>
