@@ -49,21 +49,31 @@ section.normal {
 section.imagem {
     background-color: rgb(48, 40, 40);
     color: white;
+    box-shadow: 6px 6px 13px 0px black;
+    background-attachment: fixed;
 
 }
 section.imagem > p {
-    
-    background-color: black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.555);
     font-family: "Kaushan Script", cursive;
     font-size: 2vw;
     display: inline-block;
     padding: 5px;
-    
+    text-shadow: 1px 1px 8px black;
     
 }
 section.normal > p {
     font-family: "Kaushan Script", cursive;
     font-size: 2vw;
+}
+section#img01 {
+   background-image: url('imagens/cristianismo4.png');
+   background-size: cover;
+}
+section#img02 {
+    background-image: url('imagens/estoicismo3.jpg');
+    background-size: cover;
 }
 
 footer {
