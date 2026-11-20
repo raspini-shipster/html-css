@@ -6,65 +6,92 @@
     <title>main um exemplo de tabela</title>
     <style>
         body {
+           
             font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
         }
+        table {
+            width: 600px;
+            height: 300px;
+            border-collapse: collapse;
+
+        }
+        th,td {
+            border: 1px solid black;
+            text-align: center;
+
+        }
+        .roxo {
+            background-color: blueviolet;
+        }
+         .verde {
+            background-color: darkgreen;
+         }
+         div#container {
+            overflow-x: auto;
+         }
     </style>
 </head>
 <body>
-    <table>
-        <caption>cadastro</caption>
-        <thead>
-            <tr>
-                <th>nome</th>
-                <th>sexo</th>
-                <th>idade</th>
-                <th>profissao</th>
-            </tr>
-
-        </thead>
-        <tbody>
-          <tr>
-            <td>ana</td>
-             <td>f</td>
-              <td>30</td>
-               <td>modelo</td>
-
-          </tr>
-          <tr>
-             <td>claudio</td>
-              <td>m</td>
-               <td>40</td>
-                <td>pedreiro</td>
-          </tr>
-           <tr>
-             <td>juca</td>
-              <td>m</td>
-               <td>60</td>
-                <td>aposentado</td>
-           </tr>
-            <tr>
-                 <td>emilli</td>
-                  <td>f</td>
-                   <td>16</td>
-                    <td>estudante</td>
-            </tr>
-             <tr>
-                 <td>reison</td>
-                  <td>m</td>
-                   <td>26</td>
-                    <td>dois empregos</td>
-             </tr>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="roxo">
+                <col class="verde" span="2">
+        
+                <col class="roxo">
+            </colgroup>
+            <caption>cadastro</caption>
+            <thead>
+                <tr>
+                    <th scope="col">nome</th>
+                    <th scope="col">sexo</th>
+                    <th scope="col">idade</th>
+                    <th scope="col">profissao</th>
+                </tr>
+            </thead>
+            <tbody>
               <tr>
-                 <td>venir</td>
-                  <td>m</td>
-                   <td>84</td>
-                    <td>fiscal</td>
+                <td>ana</td>
+                 <td>f</td>
+                  <td>30</td>
+                   <td>modelo</td>
               </tr>
-        </tbody>
-        <tfoot>
-
-        </tfoot>
-    </table>
+              <tr>
+                 <td>claudio</td>
+                  <td>m</td>
+                   <td>40</td>
+                    <td>pedreiro</td>
+              </tr>
+               <tr>
+                 <td>juca</td>
+                  <td>m</td>
+                   <td>60</td>
+                    <td>aposentado</td>
+               </tr>
+                <tr>
+                     <td>emilli</td>
+                      <td>f</td>
+                       <td>16</td>
+                        <td>estudante</td>
+                </tr>
+                 <tr>
+                     <td>reison</td>
+                      <td>m</td>
+                       <td>26</td>
+                        <td>dois empregos</td>
+                 </tr>
+                  <tr>
+                     <td>venir</td>
+                      <td>m</td>
+                       <td>84</td>
+                        <td>fiscal</td>
+                  </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+    </div>
     
 </body>
 </html>
